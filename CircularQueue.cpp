@@ -111,5 +111,27 @@ public:
 
 int main()
 {
+    Queues q;
+    char ch;
 
+    while (true)
+    {
+        try
+        {
+            cout << "Menu" << endl;
+            cout << "1. Implement Insert Operation" << endl;
+            cout << "2. Implement Delete Operation" << endl;
+            cout << "3. Display Values" << endl;
+            cout << "4. Exit" << endl;
+            cout << "Enter your choice (1 - 4): ";
+            cin >> ch;
+            cout << endl;
+
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << '\n';
+        }
+        
+    }
 }
